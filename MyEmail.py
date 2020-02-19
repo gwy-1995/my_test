@@ -1,7 +1,7 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
-a = input("输入邮件内容")
+a = input()
 
 mail_host = "smtp.qq.com"
 mail_username = "869790314@qq.com"
