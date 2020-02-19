@@ -15,7 +15,7 @@ message['To'] = Header("GWY", 'utf-8')    #收件人
 
 message['Subject'] = Header("testing", 'utf-8')   #标题
 smtpObj = smtplib.SMTP()
-smtpObj.connect(mail_host, 465)
+smtpObj.connect(mail_host, 587)
 smtpObj.login(mail_username, mail_password)
 smtpObj.sendmail(sender, receivers, message.as_string())
 
