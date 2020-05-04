@@ -51,7 +51,7 @@ if __name__ == '__main__':
     suite.addTest(Test2_2("test_3"))
     suite.addTest(Test2_2("test_4"))
     suite.addTest(Test2_2("test_5"))
-    filename = open("/root/test.html", "w",encoding='utf-8')  # "wb"新建或者打开一个二进制文件，写入执行完的数据
+    filename = open("//root//test.html", "w",encoding='utf-8')  # "wb"新建或者打开一个二进制文件，写入执行完的数据
     runner = HTMLTestRunner.HTMLTestRunner(stream=filename,title="测试报告",description =u"测试用例明细")
     runner.run(suite)
     filename.close()
